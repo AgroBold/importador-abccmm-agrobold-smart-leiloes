@@ -1,0 +1,81 @@
+{
+"manifest_version": 3,
+    "name": "Importador AgroBold",
+    "description": "Extensão feita para importar dados da ABCCMM",
+    "version": "2.0.0",
+    "permissions": [
+        "storage",
+        "scripting",
+        "tabs",
+        "activeTab",
+        "notifications"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.abccmm.org.br/*",
+                "http://www.abccmm.org.br/*"
+            ],
+            "js": [
+                "scripts/agrobold-api.js",
+                "scripts/jquery-min.js",
+                "scripts/sweetalert.js",
+                "scripts/abccmm-detector.js",
+                "scripts/modal-lateral.js"
+            ],
+            "css": [
+                "scripts/sweetalert.css",
+                "scripts/animate.min.css"
+            ]
+        },
+        {
+            "matches": [
+                "https://sistema.agrobold.com.br/*",
+                "https://sistema.smartleiloes.digital/*"
+            ],
+            "js": [
+                "scripts/agrobold-api.js",
+                "scripts/jquery-min.js",
+                "scripts/sweetalert.js",
+                "scripts/smart-leiloes-importer.js",
+                "scripts/modal-lateral.js"
+            ],
+            "css": [
+                "scripts/sweetalert.css",
+                "scripts/animate.min.css"
+            ]
+        }
+    ],
+    "host_permissions": [
+        "https://www.abccmm.org.br/*",
+        "http://www.abccmm.org.br/*",
+        "https://sistema.agrobold.com.br/*",
+        "https://sistema.smartleiloes.digital/*",
+        "https://api.sistema.agrobold.com.br/*",
+        "https://*.ngrok-free.app/*",
+        "http://*.ngrok-free.app/*",
+        "http://localhost:*/*"
+    ],
+    "icons": {
+        "16": "icons/icon16.png",
+        "32": "icons/icon32.png",
+        "128": "icons/icon32.png"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": ["icons/logo-smart-leiloes.png", "icons/Icone_Smart_Leiloes_Branco.png"],
+            "matches": ["https://www.abccmm.org.br/*", "http://www.abccmm.org.br/*"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "32": "icons/icon32.png",
+            "128": "icons/icon32.png"
+        }
+    }
+}

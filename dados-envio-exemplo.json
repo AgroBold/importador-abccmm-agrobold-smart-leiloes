@@ -1,0 +1,41 @@
+{
+  "animal_data": {
+    "Nome": "Exemplo Horse",
+    "Registro": "123456",
+    "Sexo": "Macho",
+    "Nascimento": "01/01/2020",
+    "Pelagem": "Alazão",
+    "Criador": "Haras Exemplo",
+    "Proprietario": "João Silva",
+    "Livro": "Definitivo",
+    "Chip": "123456789012345",
+    "Exame": "Aprovado",
+    "Vivo": "Sim",
+    "Bloqueado": "Não",
+    "genealogia": {
+      "linhagem_paterna": {
+        "pai": "Nome do Pai",
+        "p01": "Avô Paterno",
+        "p02": "Avó Paterna",
+        "p03": "Bisavô Paterno (PP)",
+        "p04": "Bisavó Paterna (PM)",
+        "p05": "Bisavô Paterno (MP)",
+        "p06": "Bisavó Paterna (MM)"
+      },
+      "linhagem_materna": {
+        "Mae": "Nome da Mãe",
+        "m01": "Avô Materno",
+        "m02": "Avó Materna",
+        "m03": "Bisavô Materno (PP)",
+        "m04": "Bisavó Materna (PM)",
+        "m05": "Bisavô Materno (MP)",
+        "m06": "Bisavó Materna (MM)"
+      }
+    }
+  },
+  "metadata": {
+    "source": "abccmm.org.br",
+    "import_timestamp": "2025-01-08T10:30:00Z",
+    "extension_version": "1.0"
+  }
+}
