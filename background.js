@@ -63,8 +63,8 @@ async function axiosLike(config) {
 
 // Configuração da API - URL Base
 // Para desenvolvimento: 'http://localhost:8080/api_importador'
-// Para produção: 'https://sistema.smartleiloes.digital/api_importador'
-const API_BASE_URL = 'https://sistema.smartleiloes.digital/api_importador';
+// Para produção: 'https://sistema.agrobold.com.br/api_importador'
+const API_BASE_URL = 'https://sistema.agrobold.com.br/api_importador/importador_abccmm';
 //const API_BASE_URL = 'http://localhost:80/api_importador/importador_abccmm'; // Para desenvolvimento com ngrok
 
 // Teste de conectividade inicial
