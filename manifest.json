@@ -54,10 +54,7 @@
         "http://www.abccmm.org.br/*",
         "https://sistema.agrobold.com.br/*",
         "https://sistema.smartleiloes.digital/*",
-        "https://api.sistema.agrobold.com.br/*",
-        "https://*.ngrok-free.app/*",
-        "http://*.ngrok-free.app/*",
-        "http://localhost:*/*"
+        "https://api.sistema.agrobold.com.br/*"
     ],
     "icons": {
         "16": "icons/icon16.png",
